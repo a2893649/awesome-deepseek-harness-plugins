@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "Joker-Principal/dsh-proxy-control",
+  "name": "dsh-proxy-control",
+  "repository": "https://github.com/Joker-Principal/dsh-proxy-control",
+  "category": "tools",
+  "description": {
+    "en": "Controls the DeepSeek Harness outbound proxy at runtime: three mutually exclusive sources (the launch environment, the Windows system proxy, or a manually entered address), applied immediately without a restart. Includes system-proxy detection, a per-host direct list for simple splitting, a connectivity self-test that goes through the harness's own call path, and an honest report of which policy layer is currently routing traffic. SOCKS is not supported. The system-proxy source is desktop only and is disabled in the web build.",
+    "zh": "在运行中控制 DeepSeek Harness 的出站代理：三种互斥来源（启动环境 / Windows 系统代理 / 手动填写），改动立即生效、无需重启。含系统代理探测、按主机分流的直连名单、走 Harness 真实调用路径的连通性自测，并如实报告当前是哪一层策略在路由。不支持 SOCKS。系统代理仅桌面版提供，Web 端会禁用这一项。"
+  },
+  "added": "2026-10-04"
+}
